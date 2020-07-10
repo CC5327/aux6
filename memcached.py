@@ -18,6 +18,5 @@ class Memcached(Packet):
 
 
 # Telling scapy that an UDP package could contain a Memcached payload
-
 bind_layers( UDP, Memcached, sport=11211 )
 bind_layers( UDP, Memcached, dport=11211 )
